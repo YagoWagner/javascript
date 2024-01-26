@@ -3,66 +3,69 @@ var mês = agora.getMonth()
 
 switch(mês){
     case 0:
-        console.log('Janeiro')
+        mês = 'Janeiro'
         break
     case 1:
-        console.log('Fevereiro')
+        mês = 'Fevereiro'
         break
     case 2:
-        console.log('Março')
+        mês = 'Março'
         break
     case 3:
-        console.log('Abril')
+        mês = 'Abril'
         break
     case 4:
-        console.log('Maio')
+        mês = 'Maio'
         break
     case 5:
-        console.log('Junho')
+        mês = 'Junho'
         break
     case 6:
-        console.log('Julho')
+        mês = 'Julho'
         break
     case 7:
-        console.log('Agosto')
+        mês = 'Agosto'
         break
     case 8:
-        console.log('Setembro')
+        mês = 'Setembro'
         break
     case 9:
-        console.log('Outubro')
+        mês = 'Outubro'
         break
     case 10:
-        console.log('Novembro')
+        mês = 'Novembro'
         break
     case 11:
-        console.log('Dezembro')
+        mês = 'Dezembro'
         break
     default:
         console.log('[ERRO] esse mês não existe!')
         break
 }
 
-estação = mês
+var estação = mês
 
-switch(estação){
-    case "Janeiro":
-    case "Fevereiro":
-    case "Março":
-        console.log('Verão!')
+switch(mês){
+    case 'Dezembro':
+    case 'Janeiro':
+    case 'Fevereiro':
+        estação = 'Verão!'
         break
-    case "Abril":
-    case "Maio":
-    case "Junho":
-        console.log('Outono!')
+    case 'Março':
+    case 'Abril':
+    case 'Maio':
+        estação = 'Outono!'
         break
-    case "Julho":
-    case "Agosto":
-    case "Setembro":
-        console.log('Inverno!')
+    case 'Junho':
+    case 'Julho':
+    case 'Agosto':
+        estação = 'Inverno!'
         break
-    case "Outubro":
-    case "Novembro":
-    case "Dezembro":
-        console.log('Primavera!')
+    case 'Setembro':
+    case 'Outubro':
+    case 'Novembro':
+        estação = 'Primavera!'
+        break
 }
+
+console.log(`Estamos em ${mês} que é a estação do(a) ${estação}`)
