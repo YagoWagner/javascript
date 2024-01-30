@@ -1,5 +1,5 @@
 console.log('Vai começar...')
-for(var r = 1; r <= 10; r ++){
-    console.log(`Passo ${r}`)
+for(var c = 1; c <= 10; c ++){
+    console.log(`Passo ${c}`)
 }
 console.log('FIM!')
